@@ -22,7 +22,7 @@ if os.name == "posix":
 	libraries.append("X11")
 	library_dirs.append("/usr/X11R6/lib/")
 	libraries.append("m")
-	#libraries.append("g2c")
+	libraries.append("g2c")
 	try:
 		library_dirs.append(os.environ["PGPLOT_DIR"])
 	except KeyError:
